@@ -1,0 +1,20 @@
+.container {
+	width: 80%;
+	max-width: 1024px;
+}
+
+.main-container {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.field-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.results {
+	padding-left: 10%;
+	max-width: 60%;
+}

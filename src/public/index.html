@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Police Data Parser</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script defer src="scripts.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Police data upload parser</h1>
+			<main class="main-container">
+				<form class="field-form" onsubmit="handleFormSubmit(event)">
+					<label for="recordIdentifier" required
+						>recordIdentifier</label
+					>
+					<input
+						id="recordIdentifier"
+						name="recordIdentifier"
+						type="text"
+					/>
+					<label for="linkingIdentifier">linkingIdentifier</label>
+					<input
+						name="linkingIdentifier"
+						id="linkingIdentifier"
+						type="text"
+					/>
+					<label for="callTime">callTime</label>
+					<input name="callTime" id="callTime" type="text" />
+					<label for="dispatchTime">dispatchTime</label>
+					<input name="dispatchTime" id="dispatchTime" type="text" />
+					<label for="arrivalTime">arrivalTime</label>
+					<input name="arrivalTime" id="arrivalTime" type="text" />
+					<label for="incidentLat">incidentLat</label>
+					<input name="incidentLat" id="incidentLat" type="text" />
+					<label for="incidentLong">incidentLong</label>
+					<input name="incidentLong" id="incidentLong" type="text" />
+					<label for="address">address</label>
+					<input name="address" id="address" type="text" />
+					<label for="initialCallReason">initialCallReason</label>
+					<input
+						name="initialCallReason"
+						id="initialCallReason"
+						type="text"
+					/>
+					<label for="finalCallReason">finalCallReason</label>
+					<input
+						name="finalCallReason"
+						id="finalCallReason"
+						type="text"
+					/>
+					<label for="policeReportedCallerDemographic"
+						>policeReportedCallerDemographic</label
+					>
+					<input
+						name="policeReportedCallerDemographic"
+						id="policeReportedCallerDemographic"
+						type="text"
+					/>
+					<label for="finalCallerDemographic"
+						>finalCallerDemographic</label
+					>
+					<input
+						name="finalCallerDemographic"
+						id="finalCallerDemographic"
+						type="text"
+					/>
+					<label for="callInitMethod">callInitMethod</label>
+					<input
+						name="callInitMethod"
+						id="callInitMethod"
+						type="text"
+					/>
+					<label for="callPriority">callPriority</label>
+					<input name="callPriority" id="callPriority" type="text" />
+					<label for="csvInput"></label>
+					<input
+						name="csvInput"
+						id="csvInput"
+						type="file"
+						accept="text/csv"
+					/>
+					<button class="submitButton" type="submit">Submit!</button>
+				</form>
+				<div class="results"></div>
+			</main>
+		</div>
+	</body>
+</html>
